@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<local-project language="java" version="3.5.1527" flavor="j2se">
+<local-project language="java" associate="http://d-sjc-00523921:8081/PayPal/data/MyFirstRESTService" version="3.5.1527" flavor="j2se">
   <property name="hide-externals" value="true" />
   <property name="show-needs-to-compile" value="false" />
   <property name="detail-mode" value="false" />
