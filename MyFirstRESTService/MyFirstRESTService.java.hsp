@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local-project language="java" version="3.5.1527" flavor="j2se">
+  <property name="hide-externals" value="true" />
+  <property name="show-needs-to-compile" value="false" />
+  <property name="detail-mode" value="false" />
+  <property name="project-type" value="classpath" />
+  <property name="hide-deprecated" value="false" />
+  <classpath>
+    <classpathentry kind="lib" path="C:\Users\tneel\git\REST\MyFirstRESTService\target\classes" />
+  </classpath>
+  <restructuring>
+    <set version="1" name="Sandbox 1" hiview="Codemap" active="true" todo="false" />
+    <set version="1" name="Flattened to classes" hiview="Codemap" active="false" todo="false">
+      <action type="flatten" active="true" description="Flatten root">
+        <params flattenLeafFolders="true">
+          <container-fqn fqn="root" type="root" path="" isroot="true" />
+        </params>
+        <composite-set />
+      </action>
+    </set>
+    <set version="1" name="Flattened to leaf packages" hiview="Codemap" active="false" todo="false">
+      <action type="flatten" active="true" description="Flatten root">
+        <params flattenLeafFolders="false">
+          <container-fqn fqn="root" type="root" path="" isroot="true" />
+        </params>
+        <composite-set />
+      </action>
+    </set>
+  </restructuring>
+  <sourcepaths>
+    <pathentry type="file" path="C:\Users\tneel\git\REST\MyFirstRESTService\src\main\java" />
+  </sourcepaths>
+  <grid-set sep="." version="3.5.1527">
+    <grid name="Diagram 1" enforce="true" strict="false">
+      <row>
+        <cell name="rest" pattern="tn.rest.?" vexpanded="true" visibility="public">
+          <grid>
+            <row>
+              <cell name="RESTController" pattern="tn.rest.RESTController" vexpanded="false" visibility="public" />
+            </row>
+          </grid>
+        </cell>
+      </row>
+      <row>
+        <cell name="userservice" pattern="tn.rest.userservice.*" vexpanded="true" visibility="public">
+          <grid>
+            <row>
+              <cell name="impl" pattern="tn.rest.userservice.impl.?" vexpanded="true" visibility="public">
+                <grid>
+                  <row>
+                    <cell name="UserServiceImpl" pattern="tn.rest.userservice.impl.UserServiceImpl" vexpanded="false" visibility="public" />
+                  </row>
+                </grid>
+              </cell>
+            </row>
+            <row>
+              <cell name="userservice" pattern="tn.rest.userservice.?" vexpanded="true" visibility="public">
+                <grid>
+                  <row>
+                    <cell name="UserService" pattern="tn.rest.userservice.UserService" vexpanded="false" visibility="public" />
+                  </row>
+                </grid>
+              </cell>
+            </row>
+            <row>
+              <cell name="domain" pattern="tn.rest.userservice.domain.?" vexpanded="true" visibility="public">
+                <grid>
+                  <row>
+                    <cell name="UserList" pattern="tn.rest.userservice.domain.UserList" vexpanded="false" visibility="public" />
+                  </row>
+                  <row>
+                    <cell name="User" pattern="tn.rest.userservice.domain.User" vexpanded="false" visibility="public" />
+                  </row>
+                </grid>
+              </cell>
+            </row>
+          </grid>
+        </cell>
+      </row>
+      <description>Top-level breakout</description>
+    </grid>
+  </grid-set>
+</local-project>
+
